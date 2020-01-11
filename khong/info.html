@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>THÔNG TIN NGHỆ SĨ</title>
+
+</head>
+<body>
+        <div class="bg w-1430 h-200 ">
+                <div class="search-box" >
+                        <input class="search-txt" type="text" name="" placeholder="Type to search">
+                            <a class="search-btn" href="#">
+                            <i class="fas fa-search" ></i>
+                
+                            </a>
+                </div>
+            </div>
+    <link rel="stylesheet" href="info.css">
+    <div id="artist-list">
+        <div class="seperator" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                <div class="sizing">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHIAxwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAGAAEDBAUCBwj/xAA+EAACAQMDAQYCBwUGBwAAAAABAgMABBEFEiExBhNBUWFxIoEUMkKRobHwYnLB0eEVIyQzUvEHJTVDU4KS/8QAGAEAAwEBAAAAAAAAAAAAAAAAAAECAwT/xAAkEQACAgIDAAEEAwAAAAAAAAAAAQIRAzESIUEyIjNRUgQFE//aAAwDAQACEQMRAD8ACR0pwK5BzXYrkNCRBUyiokqdKAOlHNWYjioQKlQUhl2Nqlkuo7dMyE89ABkt7Cq0WcjHnWjpGkXV7qihoiv2RuHRfOpbSKirGt4tSuoRNb6a/dEZUu3OPYA0yXDq4S6gMJJwrZypPlnz9DRzHqVppi91NcMRDgPKi5C+/p64qj2qFvqWmSvmORHXImj4I8QfWiLtWzTgvAeBp6rWche1idyCzKMkdDU+aTMhp5o4Y2kmdVRRlmY8AedDM/axpHYaXYvcovHeuxUH2GKv6npU3aC6+hRzKsEG0yLnG5jzz7D861dJ0NbKYW/doAer5yMVUXDRSxt9gvB2muwx+laU/djq0L5K/I/zrZs7uC/t1uLV98bfLB8j60Zf2dY2xEkaq8h6kjigaaKy03X5be0+FLsF+7HRWA5x8s/dRcZdIcsfFWWWqJqleoXpEELmq8tTvUEnNAinLVZutWpR1qs3WqA5pU9KmI5alTmlQAwqRa4FdqaYEq1MhqEVKhpAWVqUVChqdRSGXNMlgjvYXu8CFTliRkdPGirS9Vhjt4nsJO9Ug7H2BN2WJOFAAFCdvbST7u7RiFHxHwXNR6Vqn9m3jWKR96yfEuOr5PIHrWclfRvi12Heo6Vp+rNDfajbxRyIADInwt82oV7ezyaXJplvooC2piO/u8MMk/Dn3qzqnaJJ9PmgvYXW1ZdrwTWrFfm2fxwcUKaEGYmCMEwxyltzndhQfhUfrw9a08KfQQW4ZbeNWGCFGQPPFTA4qPdXW7NQznMppZLTW5mUkLcBWz6gYP5fjRJY3tqq4NwsjjqM0MdobZpIkmRiCgKnywf68fOsO0jktruALKPikAYLjp8qaSuzeEukj0m/7SaVDCI2kJc/ZQUNXqW019Z6mVYxIzjyLHacDPvV3UOzOdRS4J3xnBUHjb+uak1u+h0i1jmNuDDCQuwAHJPHj70rS0aV+2im2cfEMHxHlUD1XOoGcRSwbGR3CMOd2TwMfOjSbsNdohYX9s2Bk7kZccfOpnkjjpS9OWrAx6gfpU85CLudgF8zUD9K0JK0tVmqzLVc0wOKVI0qYCpUqVAD4xSBpHpTCgRKtTJUC1Zt1DuAxIUcswUnH3UDJI8kgAEk+AFXkt5UUtKNgAzg9akhu7SGNls2VjnG4HJPvVK9uGCF2JMnUDPGaFFsbPRezcVlc9mkt05NwrSMcYZiPD3GOP3a8u7TWc9hqxV2OSN0ci/bGeCP1wa0uzWu3en2kwhHefRp97xE4Ox+Qy+WGB56fFg8GrusarZ6yoWeBljZtzBSN0b+LIfzB4Nc3cMjvRcZdUCFzqV7cTQ295eyNEzqDnniiuxhhtrdY7fBXruBzuPnWD/Y9ot8rxXM9zK/CqyAd2PPjNZWk3l1pl7NArFkSVleNiccHBx91dK+pdEtsPAafOKq2t1HcxhozzjlT1FT5qBF6y05tSVg4VbYcSO44/qaCba8t4pXltCH7tz3ZkXPQ8ZFFumau03Z8LuCPFcTIw/9sgfdivI47mWGaRo8gFiSpPWsv47nOc0/C+XFI9Zse1T3q/4tlmAUYijXx881n6/dLe206HmJUz7HwrC0TUo2QMDGrbcfEOKsSzrLZ3IhO+KOMl3HQseg988n0rfjUjRzTiZqyvah5lbESOkuweasDn8K981CU/RpFyDFPGyBvAbhgH8a+fbiQNEyHd8a8KK9B7O9tYL3T0stVmhheONdkkjhQwA8c1xf2OKUlGcVdGUGgOiWV5O5ndjvkZpF/wBGM+fTnH3GtKKMCLC5wowA3UfPxqjrd9ZjXLuXT5llt5CrhlzjpyP/AKzVpLpO6IL4UrkMeld6uUVZDOZRVcipYJ0mRcEcj4fUeB/CmkFToCu1NXTVzQA1PTU9MBZpDrUe6uxTYiVahudQa3YQRsFZuff0qQcVj60QblFPB2cZPDelEVbA1La8DAsRuU8SoT8Q9aulFKqRIXhb6p8j5H1oUguHhcMzYI67wfiHkf51aXWZLS6UjLRNw8bchh5+/rWtCCGGeOzv47krmBlMFyg5Ow+PuDyKmvbP6NcvGzHaV3ROq7lcMchh+P6FYtzci4jWeIhFJBAHoec0d6b9BvrP6Jd7oxH8dvKPsqeduR4DkY9K5864tSLiD3ff2TYSywJGJQpaSQjlieFX05od0+Is5kdjknJJ8TWn2pv7WZvoGmFntYHzJMTzLJ0+YAz8z6VkQ3QaUxk4RDjcfGrxRaVsUnbN1JhCN6EqF5yK31bKqfMUEJfC4vILeAFkMirx9rnn5UaMwAJPQCjJ4CBTSdThjl1JbmcRq8veqWPrg4/ChvUJI3vJnt+YncsvGK6uVDSO0Zz8XGR1FVhyTVxxpScvyJvqjS00BlMZVTgZ2sMq3yoij1KM6Xc2a28nfNHtVYwOP3aGtJb+/UZ5AOK2pEGcjjPT0pS2NaMy41iMqNkDFvEv0PvUKwPd2hlICyW5O4AdAeR/GmltVim7sjhxwTVjS7gRmW3uSQjrtJyB5+fv99aElRpdkKPnlTg+o8P161dtb6aSNWuNzW/1UijUZf386yrhdjSQMc4OQVINaemapBFHsaVoF8u7DfcfChroDb0uSQHdJBJtc/XkOWB8/QVdmTafTzqGymju4CLa53eZJ5x7VKkQhTBaRh6+JrOSKK7io6nkGKhPWoAalSpUAQKc1KpqFeK7DUxFjOay9et+8t1lXrGefY1oKaqaxLssyg6ucU1sDChWUdAxA6qCQR91XzbJcW5Xa6tjKlyWGff+lVLflVOwyKoz8Bw6e1aVkRJ/lvNL+8igj+PzrYRlxTvCrRSEgg42+RrckkuYU7yyl7sTp3cvt5j1/mazdasSlwk8YIjkxuHkR1rRsmEtoVPgaTQEWxEi7uIfCorMiie4Bwp7skk7erf0q9PJ3cMiY3M/wgetdrEqQbcthV8z+VCAu9l7ZBdzTZX+7UIAB0z/AEFEsuWhkA6lSB91ZvZ6IRaajAAd4SxwMeOP4VcvneOyneMDcsbEfdWEnchgDgFMsCrEcjjAqm42SA+Bq1HgLuVi/wC1jiomiM06LkklhyP5V0Ikk06Tu7pen6Fb4YHx4PjQoDneQfEYNa+mX/e5hm+v0BP2vepnH0qLLd/btLDlAS6nIx41jNIeCRg+dEW4x9TlfPyqtLoN3eEzWUJZDknJwPl51EZA0YVx8ahwcsPxFcWccsswjhj7yQ9F25ol03stIWMmpZRAfhiVuW9zWpb6fbadJK1vFtLHDYJ5X51pySFRgWlnexvzBGHYdZGKn2GP51ejlukPwzSq2cFeZVB9fEfM1rySRsNm7B8Oev8AOs+8wWEgYpIv/cXw9/MelTY6LEM6zoRvBlX664xj5eVMy1mlnRxJuUZGVOfqN5Z8VNaSN3kSSYxvUNjyzWckBwaVOaVIZUFdCuacUxEq1n6zMiCNJAcsDtI8K0FrE1m5WS4RI+TGDkg+Jqoq2DKMCyd4CjBVByrZ24ratESU5MiSuoyfhGT7AdfwrLTGM0zNsYMpIYdDW1E2EhtJLm3YEdRhFXGAPyrDtbqSwu2gukKnOGXyPnWzpd/30KsSAw4YDzqe+tbXUI/71F70D4ZD4e/mKkZlrH9LmE8YTu0baVPXdgc0pllRiJtwHhjn7j4+x5rTsLEWkKqwGWT4yDwWH+5pTwqUK4J3ccdeelAG1p0Wywt0AwBGOKs7OCPMVYjgKooIyQACawO1esyaZ3drakCdxuZuuxen3n+Fc6XKXQ2CvcTW0rQzoIpEba3iM/PwqaSzfIMbsp/1eJ+6qSTNLeGW6mLl+d0h5NbNrd27NtDM2B1CnArodonYMXML27903hyD511YW811dRxQBy7H7AyQPE/Kt/VdOe6iT6LEzTbsBB60a9kOz0WipvcB7pwO8fHA9B6fnSnkUUXDG5Mg0/R7OFF78/SHHi/T7qsXNwIDsW4jVFXGwAcDwqh2q+kaZc4hbZbS5aMj8R+vOgy8vFBO+XkE/VOTWcVY5fS6CS81l4X+KDeh6MGqE6zFKOYzGT1PWh6PVAVMdwQY/s45IqlcXrsSsLnZ5kcmrUWQ5BHeTW5TLTqwPOHOCp8wazjqBClSXk2/VcD86yrVVLb5OfLNaCyrj1quIrOEvY+9AcMIy2WA4xRTEyyQqYyCuOMUH3Cjlh862uzczFHiboBlfapyR6GmahFKnc4NNWJRVC56V2qUytipVaqEdCMgZoMmZvpMu8YbecjyOaNg/pQbqqldRuMrtBc4rTGJjK5pmc4qINTjcxwoJPkK1JLNld/R3OD9aiDTr1HwxPJ6HyoTlBUBSBketd29xLG42k56UmrBM9DguU2bWAKmoe0Fhc2FrFcMskEc4BhZxjJ8MHz9OtVOzV3E11btctG6KwYgc5xzgivaIZ7fU4DFOEmikXlXGQwNYynxZtCHJHmOh62bgrb3RXvSPhccbj5EedCfbmKSPXTMQdksalD7cEfrzr0ntL2CtiXfSCbaUruWINxn9knofSg62mj1yxkstSjbv7c4kbG0huRkeR6immk+SJlFrpgMzZHqK07LVGCpGY13ZGSOMitG77JMoJtbxXHgki4/EViXOl31oSZbeRQv2lGR94rRSjLTIqg70SfuVW7C7o8lR5gDqRRRZ6hbzvsjfDbdxXb9Wg+z1Cxt47ZEExQQIJYn48fiwfXmiK3ltLq6mexUxRSoFG45I8P4muR9y7R2wdKkCP8AxB15LuRdNtjuWF8yP+15CgnFavaDS5dJ1B4XJdGO6Nz9oVb0rRbHULNZTdypKOJEAB2mutNRjZyTbcuwfpDpRjH2VsActcTv6cD+FNcdlLR1/wANPLG37Q3Cp/1iTxYKRtgVMrGoZUMM7xNyUYqfka6Vq0Edu5wcnjxolsI9j28u0L3sAyB54/2oXY8c9KKxFOtrpzkjIKhvmP8Aas8mhosydaVdOvNKucsqipUpUqsRKOtC+rj/AJhN701Krx7EyrbAGXBANXV4YgdMdKVKtiShc/5lc2/+fF++v50qVABLGqp2msdihcuucDGa9b0A4S1A44xSpVzZtnVg0zR19iv0NlJBFyvIPvXnnbBFj/4iTd2oXfZqzbRjccjk+tKlSj6GX4ohJPnUbGnpVk9mbMrWABEjADdk8+PStXTmIHBI+BfGlSrbxGuMye1/NgxPJDJgn50P9niRqiAE4KtkefBpqVaL7Zlm+YWx1ZTpT0q5hADq4A1W6x/5DVZaVKu1aMjo0aN/0+x/ei/hSpVnk8KiWH60qVKuco//2Q==" alt="Twenty One Pilots" width="140" height="80" margin-top="16px" margin-left="15px">
+                    <h1 style="display: inline;font-size: 75px;">Twenty One Pilots</h1>
+                    <div id="t-o-p" >
+                            <hr>
+                            <p>Member: Tyler Joseph</p>
+                            <p>Origin: Columbus, Ohio</p>
+                            <p>Album: Regional at Best, Vessel, Blurryface</p>
+                    </div>    
+                    
+                </div>
+                
+        </div>
+    <div class="seperator" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+            <div class="sizing">
+                <img src="data:image/jpeg;base64,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" alt=" Thái Vũ" width="140" height="80" margin-top="16px" margin-left="15px">
+                <h1 style="display: inline;font-size: 75px;">Thái Vũ</h1>
+                <div id="t-o-p" >
+                        <hr>
+                        <p>Tên đầy đủ: Hoàng Thái Vũ</p>
+                        <p>Ngày Sinh: 03/10/1995</p>
+                        <p>Bài hát nổi bật: Lạ Lùng,Đông Kiếm Em,Phút Ban Đầu,...</p>
+                </div>    
+            </div>
+   
+    </div>
+    <div class="seperator" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+            <div class="sizing">
+                <img src="https://ca-times.brightspotcdn.com/dims4/default/b149c48/2147483647/strip/true/crop/640x523+0+0/resize/840x686!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Ffb%2F1e%2Fd29a5671437db35d0951db13a4f6%2Fjustin-bieber-def-jam-wire.jpg" alt=" Thái Vũ" width="140" height="80" margin-top="16px" margin-left="15px">
+                <h1 style="display: inline;font-size: 75px;">Justin Bieber</h1>
+                <div id="t-o-p" >
+                        <hr>
+                        <p>Tên đầy đủ: Justin Drew Bieber</p>
+                        <p>Ngày Sinh: 01/03/1994</p>
+                        <p>Bài hát nổi bật: Baby,Sorry,What do you mean,...</p>
+                </div>    
+            </div>        
+    </div>
+    <div class="seperator" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+            <div class="sizing">
+                <img src="https://image.thanhnien.vn/800/uploaded/caotung/2019_07_29/55875389_1169858229841303_7524202620014034944_n_bdxj.jpg" alt="Chilles Band" width="140" height="80" margin-top="16px" margin-left="15px">
+                <h1 style="display: inline;font-size: 75px;">Chilles Band</h1>
+                <div id="t-o-p" >
+                        <hr>
+                        <p>Thành viên: 5 thành viên</p>
+                        <p>Ngày thành lập: cuối năm 2018</p>
+                        <p>Bài hát nổi bật: Nếu Ngày Mai Không Đến,Và Thế Là Hết,Mascara,...</p>
+                </div>    
+            
+            </div>        
+    </div>
+    <div class="seperator" onmouseover="bigImg(this)" onmouseout="normalImg(this)"> 
+            <div class="sizing">
+                <img src="https://media.pitchfork.com/photos/592c55445e6ef95969326b55/2:1/w_790/4e9fe179.jpg" alt="Ed Sheeran" width="140" height="80" margin-top="16px" margin-left="15px">
+                <h1 style="display: inline;font-size: 75px;">Ed Sheeran</h1>
+                <div id="t-o-p" >
+                        <hr>
+                        <p>Tên đầy đủ: Edward Christopher</p>
+                        <p>Ngày Sinh: 17/2/1991</p>
+                        <p>Bài hát nổi bật: Perfect,Shape Of You,Thinking Out Loud,... </p>
+                </div> 
+
+            </div>        
+    </div>
+
+</body>
+<script src="info.js"></script>
+</html>
